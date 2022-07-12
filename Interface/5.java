@@ -1,0 +1,45 @@
+interface Mumbai{
+
+  void  quality();
+  void price();
+}
+
+class SunilShop implements Mumbai{
+
+  public  void quality(){
+      System.out.println("BEst Quality");
+    }
+
+    public void price(){
+      System.out.println("500rs");
+
+    }
+}
+
+class TilakRoad implements Mumbai{
+
+    public void quality(){
+      System.out.println("BEst Quality");
+    }
+
+    public void price(){
+      System.out.println("1000rs");
+
+    }
+}
+
+class Boy{
+
+  public static void main(String []args){
+
+    Mumbai s = new SunilShop();
+    s.quality();
+    s.price();
+
+    Mumbai T = new TilakRoad();
+    T.quality();
+    T.price();
+
+
+  }
+}
